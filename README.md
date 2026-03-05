@@ -25,6 +25,11 @@ Or build from source:
 go install github.com/taigrr/spank@latest
 ```
 
+> **Note:** `go install` places the binary in `$GOBIN` (if set) or `$(go env GOPATH)/bin` (which defaults to `~/go/bin`). Copy it to a system path so `sudo spank` works. For example, with the default Go settings:
+> ```bash
+> sudo cp "$(go env GOPATH)/bin/spank" /usr/local/bin/spank
+> ```
+
 ## Usage
 
 ```bash
